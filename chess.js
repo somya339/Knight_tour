@@ -136,7 +136,6 @@ window.onload = () => {
     Try another random solution
   */
 function playAgain() {
-  document.getElementById("btnPlayAgain").disabled = true;
   clearBoard();
 
   chess = new Chess(size);
