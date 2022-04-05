@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Knight's tour</title>
+	<link href="./styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body><br />
+
+	<div>
+
+		<div class="chess-board">
+
+			<div class="digits">
+				<div class="digit">8</div>
+				<div class="digit">7</div>
+				<div class="digit">6</div>
+				<div class="digit">5</div>
+				<div class="digit">4</div>
+				<div class="digit">3</div>
+				<div class="digit">2</div>
+				<div class="digit">1</div>
+			</div>
+
+			<div class="main-board" id="main-board">
+			</div>
+
+			<div>
+			</div>
+
+			<div class="letters">
+				<div class="letter">a</div>
+				<div class="letter">b</div>
+				<div class="letter">c</div>
+				<div class="letter">d</div>
+				<div class="letter">e</div>
+				<div class="letter">f</div>
+				<div class="letter">g</div>
+				<div class="letter">h</div>
+			</div>
+
+		</div>
+
+		<div class="play-again">
+			<button id="btnPlayAgain" onclick="playAgain()">Play again</button>
+			<br>
+			Starts from random square.
+			<br>
+			Uses backtracking + heuristics to find a solution.
+		</div>
+	</div>
+
+	<script src="chess.js" type="text/javascript">
+	</script>
+</body>
+
+</html>
